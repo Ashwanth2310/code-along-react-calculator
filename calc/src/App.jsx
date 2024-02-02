@@ -131,8 +131,7 @@ function formatOperand(operand) {
 }
 
 function App() {
-  const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
-    reducer,
+  const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(reducer,
     {}
   )
 
@@ -149,7 +148,7 @@ function App() {
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
       >
         CANCEL
-      </button>
+      </button> 
       <button onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
         DEL
       </button>
