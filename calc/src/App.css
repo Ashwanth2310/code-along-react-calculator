@@ -1,0 +1,28 @@
+
+.calculator-grid {
+  display: grid;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 7rem);
+  background-color: rgb(68, 62, 62);
+}
+
+
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(81, 69, 69, 0.75);
+  display: flex;
+  padding: .75rem;
+  word-wrap: break-word;
+  word-break: break-all;  
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  
+}
